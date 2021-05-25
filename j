@@ -16,7 +16,6 @@ pipeline {
       steps {
       sh 'mvn clean -Dmaven.test.skip=true -X'
       sh 'ls /var/jenkins_home/workspace/webgoat_pipeline/webgoat-server/'
-      sh 'mvn -pl webgoat-server spring boot:run'
       }
     }
   }
